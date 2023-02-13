@@ -18,6 +18,7 @@ public class EmployeeController {
 	@Autowired
 	private EmployeeService employeeService;
 	
+	//Method to handle the GET Request. Fethches all the records.
 	@RequestMapping(value = "/emps", method = RequestMethod.GET)
 	public List<EmployeeEntity> getEmployeeEntities(){
 		return employeeService.getAll();
